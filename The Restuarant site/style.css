@@ -1,0 +1,91 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-color: black;
+    background-image: url(images/bgimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* DIV class wraps header, nav, main and footer */
+.container{
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    /* background-color: antiquewhite; */
+    height: 110px;
+    text-align: center;
+}
+
+nav{
+    /* The 4th parameter in rgb is for OPACITY */
+    background-color: rgb(218, 165, 32, 0.33);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+main{
+    height: 300px;
+    text-align: center;
+    /* Margin works for the outise of the container */
+    /* margin-top: 80px; */
+    /* Padding works for the inside of the container */
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.map{
+    padding-bottom: 25px;
+}
+
+footer{
+    background-color: rgb(218, 165, 32, 0.66);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+h1{
+    font-size: 64px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    font-size: 16px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* text-decoration: none; */
+}
+
+/* Compound Selector */
+/* This will only work for a tags inside nav */
+nav a{
+    text-decoration: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 12px;
+}
+/* Or we can also add a class attribute  (class="no-underline") in all a tags inside the nav container and do this ---->*/
+/* .no-underline{
+    text-decoration: none;
+} */
+
+footer p{
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 12px;
+}
+
